@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/touxiang.jpg">
 <meta property="article:published_time" content="2025-05-18T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-05-09T10:30:02.290Z">
+<meta property="article:modified_time" content="2025-05-09T10:39:26.432Z">
 <meta property="article:author" content="deCOLE">
 <meta property="article:tag" content="TryHackMe">
 <meta name="twitter:card" content="summary">
@@ -18,7 +18,7 @@
   "url": "http://example.com/2025/05/19/TryHackMe%E6%88%BF%E9%97%B4%E4%B9%8BReset/",
   "image": "http://example.com/img/touxiang.jpg",
   "datePublished": "2025-05-18T16:00:00.000Z",
-  "dateModified": "2025-05-09T10:30:02.290Z",
+  "dateModified": "2025-05-09T10:39:26.432Z",
   "author": [
     {
       "@type": "Person",
@@ -159,7 +159,7 @@
   isHighlightShrink: false,
   isToc: true,
   pageType: 'post'
-}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(img/qccq.jpg);"></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">deCOLE's Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">TryHackMe房间之Reset</span></a></span><div id="menus"></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">TryHackMe房间之Reset</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-05-18T16:00:00.000Z" title="发表于 2025-05-19 00:00:00">2025-05-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-09T10:30:02.290Z" title="更新于 2025-05-09 18:30:02">2025-05-09</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="container post-content" id="article-container"><h1 id="TryHackMe房间之Reset"><a href="#TryHackMe房间之Reset" class="headerlink" title="TryHackMe房间之Reset"></a>TryHackMe房间之Reset</h1><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>对smb还是有点不熟悉，没想到这个smb共享也能打一波强制身份验证来获取哈希，学到了</p>
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(img/qccq.jpg);"></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">deCOLE's Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">TryHackMe房间之Reset</span></a></span><div id="menus"></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">TryHackMe房间之Reset</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-05-18T16:00:00.000Z" title="发表于 2025-05-19 00:00:00">2025-05-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-09T10:39:26.432Z" title="更新于 2025-05-09 18:39:26">2025-05-09</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="container post-content" id="article-container"><h1 id="TryHackMe房间之Reset"><a href="#TryHackMe房间之Reset" class="headerlink" title="TryHackMe房间之Reset"></a>TryHackMe房间之Reset</h1><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>对smb还是有点不熟悉，没想到这个smb共享也能打一波强制身份验证来获取哈希，学到了</p>
 <p>还有就是bloodhound的使用不够熟练</p>
 <h2 id="流程记录"><a href="#流程记录" class="headerlink" title="流程记录"></a>流程记录</h2><p>rustscan扫描结果如下</p>
 <p><img src="https://decole-1325896800.cos.ap-beijing.myqcloud.com/202505091824891.png?raw=true" alt="img"></p>
@@ -200,7 +200,7 @@
 <p>复制粘贴下来用hashcat来破解</p>
 <p><img src="https://decole-1325896800.cos.ap-beijing.myqcloud.com/202505091825805.png?raw=true" alt="img"></p>
 <p>得到AUTOMATE的密码为Passw0rd1</p>
-<p><img src="https://decole-1325896800.cos.ap-beijing.myqcloud.com/202505091825379.png?raw=true" alt="img"></p>
+<p> sudo &#x2F;usr&#x2F;bin&#x2F;fail2ban-client set asterisk-iptables banip 1.1.1.2Plain</p>
 <p>然后尝试用evil-winrm连接</p>
 <p><img src="https://decole-1325896800.cos.ap-beijing.myqcloud.com/202505091825625.png?raw=true" alt="img"></p>
 <p>拿下第一台主机</p>
